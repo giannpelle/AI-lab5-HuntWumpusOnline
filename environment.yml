@@ -1,0 +1,15 @@
+name: online_wumpus
+channels:
+  - conda-forge
+  - ankurankan
+dependencies:
+  - python>=3.6
+  - jupyterlab
+  - jupytext
+  - gym
+  - pgmpy
+  - pip
+  - pip:
+    - wumpus[gym] @ git+https://gitlab.inf.unibz.it/tessaris/wumpus.git
+    - z3-solver
+    - git+https://github.com/garydoranjr/pyddl.git
