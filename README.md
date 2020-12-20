@@ -4,13 +4,15 @@ This repository contains the group work submitted for the Assignment 5 of the [A
 
 ## Problem description
 
-The task of the assignment was to implement an uninformed player to solve the "Hunt the Wumpus" game getting the best reward using an online search algorithm.  
+The task of the assignment was to implement an **uninformed player** to solve the "Hunt the Wumpus" game getting the best reward using an *online search algorithm*.  
 A brief description of the game is as follow: we are in a chess-like world environmentwhere each cell can either be empty or a pit, and there might be a wumpus in it.
 The agent can only move in empty cells (otherwise he would die either by falling into a pit or killed by the wumpus) and the movement is restricted by the orientation the agent has before performing the movement action. The world contains exactly one gold, which has to be grabbed by the agent if that is possible, and exactly one wumpus (monster) which can be killed if necessary in order to move into its location.  
-Since the player we had to implement was an uninformed one,it couldn’t see the whole world configuration as needed, so it had to explore the world using its sensors and elaborating its percepts as it progresses in the game to get information about the environment.
+Since the player we had to implement was an uninformed one, it couldn’t see the whole world configuration as needed, so it had to explore the world using its sensors and *elaborating its percepts* as it progresses in the game to get information about the environment.
 The agent perceives a BREEZE, if there is one or more pits in the 4 ortogonally adjacent locations (but doesn’t know where exactly that pit is, and how many of them there are). It perceives a STENCH, if the wumpus is in one of the ortogonally adjacent locations, and it perceives BUMP if it bumps on the border of the world.
 The last percept the agent can perceive is GLITTER, which tells the agent that there is a gold in that location.  
-The aim of the game is to get the best reward possible from trying to grab the gold and climbing out of the world.
+The aim of the game is to get the *best reward possible* from trying to grab the gold and climbing out of the world.
+
+An example of the **game** is shown below:
 
 <img src="/images/hunt_wumpus_online.gif"  width="300">
 
